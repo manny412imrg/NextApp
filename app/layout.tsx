@@ -1,3 +1,4 @@
+import { montserrat } from './ui/font';
 import './ui/global.css'
 
 export default function RootLayout({
@@ -7,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className={`${montserrat.className} antialiased`}>
         <h1>Este titulo</h1>
         <div style={{border:"1px solid #000"}}>
           {children}
